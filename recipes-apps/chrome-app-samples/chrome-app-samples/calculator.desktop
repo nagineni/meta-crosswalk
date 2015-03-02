@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Calculator
+Comment=A sample application that provides a simple calculator.
+Exec=/usr/bin/calculator
+Terminal=false
+Icon=/usr/lib/chrome-app-samples/calculator/assets/icon-128x128.png
+Categories=Utility;

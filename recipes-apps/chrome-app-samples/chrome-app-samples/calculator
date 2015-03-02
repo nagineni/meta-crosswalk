@@ -1,0 +1,3 @@
+#!/bin/sh
+
+exec /usr/bin/app_shell --ignore-gpu-blacklist --no-sandbox --app-shell-app-path=/usr/lib/chrome-app-samples/calculator
