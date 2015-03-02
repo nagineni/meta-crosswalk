@@ -1,0 +1,3 @@
+#!/bin/sh
+
+exec app_shell --ignore-gpu-blacklist --no-sandbox --disable-web-security --app-shell-app-path=/usr/lib/ventus-appshell/
