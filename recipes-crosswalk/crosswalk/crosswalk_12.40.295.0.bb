@@ -404,6 +404,10 @@ DEFAULT_CONFIGURATION = "\
     -Duse_system_libxslt=1 \
     -Duse_system_speex=1 \
     -Duse_system_yasm=1 \
+    -Duse_aura=1 \
+    -Dchromeos=0 \
+    -Duse_ozone=1 \
+    -Duse_xkbcommon=1 \
     "
 
 # Yocto's libav doesn't fully replace ffmpeg,
