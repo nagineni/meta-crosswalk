@@ -3,15 +3,16 @@
 DAEMON=/usr/bin/ventus
 PIDFILE=/var/run/ventus.pid
 DESC="Ventus"
+DAEMONUSER=app
 
 set -e
 
 do_start() {
-	$DAEMON
+	start-stop-daemon --start --quiet --background --chuid $DAEMONUSER:$DAEMONUSER --exec $DAEMON
 }
 
 do_stop() {
-	start-stop-daemon --stop --name ventus --quiet
+	start-stop-daemon --stop --chuid $DAEMONUSER:$DAEMONUSER --name xwalk --quiet
 }
 
 case "$1" in
